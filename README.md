@@ -1,0 +1,2 @@
+- First time using Github and Git.
+- If you have issues go use a different service.
