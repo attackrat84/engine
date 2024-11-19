@@ -4,7 +4,6 @@
 
 class engine {
 	int x, y, xvel, yvel;
-	const Uint8* keyboard;
 	bool exitEngine;
 	window* main_window;
 	void input();	// process input
