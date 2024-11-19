@@ -22,7 +22,6 @@ void engine::start()
 		engine::process();
 		engine::draw();
 		SDL_Delay(16); // about 15 fps
-		SDL_Delay(64); // about 15 fps
 	}
 }
 
