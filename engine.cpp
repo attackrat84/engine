@@ -22,6 +22,7 @@ void engine::start()
 		engine::process();
 		engine::draw();
 		SDL_Delay(16); // about 15 fps
+		SDL_Delay(64); // about 15 fps
 	}
 }
 
@@ -76,9 +77,20 @@ void engine::draw()
 {
 	this->main_window->cleanBuffer(0x00000000);
 	Triangle triangle1 = Triangle(
+<<<<<<< HEAD
 		Vector2i(x,y), Vector2i(99, 50), Vector2i(699,50),
 		0x00ff0000, 0x0000ff00, 0x000000ff
 	);
 	draw::Triangle2D(triangle1, this->main_window->pixels);
+=======
+		Vector2i(399,549), Vector2i(99, 50), Vector2i(699,50),
+		0x00ff0000, 0x0000ff00, 0x000000ff
+	);
+	draw::Triangle2D(triangle1, this->main_window->pixels);
+	triangle1.c[0] = 0x00ffffff;
+	triangle1.c[1] = 0x00ffffff;
+	triangle1.c[2] = 0x00ffffff;
+	draw::Triangle2D_w(triangle1, this->main_window->pixels);
+>>>>>>> f53d99a04a437bcbca1c3539ba2298eefeff79ad
 	this->main_window->update();
 }
